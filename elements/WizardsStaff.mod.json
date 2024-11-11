@@ -1,0 +1,41 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "staffstick",
+    "customModelName": "gandalf_staff:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Wizards Staff",
+    "specialInformation": {
+      "fixedValue": [
+        "+20% Mana When In Hand"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:WandsAndArmor"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.6,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 500,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "WizardsStaffRightclicked"
+    },
+    "onItemInUseTick": {
+      "name": "WizardsStaffToolInHandTick"
+    }
+  }
+}

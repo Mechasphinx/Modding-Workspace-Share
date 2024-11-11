@@ -21,6 +21,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.mystics.procedures.IcicleProjectileWhileProjectileFlyingTickProcedure;
 import net.mcreator.mystics.procedures.IcicleProjectileProjectileHitsLivingEntityProcedure;
 import net.mcreator.mystics.init.MysticsModEntities;
 
@@ -75,6 +76,7 @@ public class IcicleProjectileEntity extends AbstractArrow implements ItemSupplie
 	@Override
 	public void tick() {
 		super.tick();
+		IcicleProjectileWhileProjectileFlyingTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 		if (this.inGround)
 			this.discard();
 	}

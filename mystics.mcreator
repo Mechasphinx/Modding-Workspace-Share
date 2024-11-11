@@ -472,51 +472,6 @@
       "path": "~/Spells/Fire"
     },
     {
-      "name": "Heatwave",
-      "type": "item",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "heatwave",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/mystics/models/item/heatwave.json",
-          "src/main/java/net/mcreator/mystics/item/HeatwaveItem.java"
-        ]
-      },
-      "path": "~/Spells/Fire"
-    },
-    {
-      "name": "Hades",
-      "type": "item",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hades",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mystics/item/HadesItem.java",
-          "src/main/resources/assets/mystics/models/item/hades.json"
-        ]
-      },
-      "path": "~/Spells/Fire"
-    },
-    {
-      "name": "Firebolt",
-      "type": "item",
-      "sortid": 43,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "firebolt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mystics/item/FireboltItem.java",
-          "src/main/resources/assets/mystics/models/item/firebolt.json"
-        ]
-      },
-      "path": "~/Spells/Fire"
-    },
-    {
       "name": "NetherTeleport",
       "type": "item",
       "sortid": 44,
@@ -557,36 +512,6 @@
         "files": [
           "src/main/java/net/mcreator/mystics/item/IcicleItem.java",
           "src/main/resources/assets/mystics/models/item/icicle.json"
-        ]
-      },
-      "path": "~/Spells/Ice"
-    },
-    {
-      "name": "Hailstrom",
-      "type": "item",
-      "sortid": 47,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hailstrom",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mystics/item/HailstromItem.java",
-          "src/main/resources/assets/mystics/models/item/hailstrom.json"
-        ]
-      },
-      "path": "~/Spells/Ice"
-    },
-    {
-      "name": "Hoarfrost",
-      "type": "item",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hoarfrost",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mystics/item/HoarfrostItem.java",
-          "src/main/resources/assets/mystics/models/item/hoarfrost.json"
         ]
       },
       "path": "~/Spells/Ice"
@@ -659,6 +584,7 @@
       "locked_code": false,
       "registry_name": "mana_0_procedure",
       "metadata": {
+        "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/mystics/procedures/Mana0ProcedureProcedure.java"
         ],
@@ -899,21 +825,6 @@
         "files": [
           "src/main/java/net/mcreator/mystics/item/SummonOreItem.java",
           "src/main/resources/assets/mystics/models/item/summon_ore.json"
-        ]
-      },
-      "path": "~/Spells/Earth"
-    },
-    {
-      "name": "RockDefence",
-      "type": "item",
-      "sortid": 65,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rock_defence",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/mystics/models/item/rock_defence.json",
-          "src/main/java/net/mcreator/mystics/item/RockDefenceItem.java"
         ]
       },
       "path": "~/Spells/Earth"
@@ -1190,8 +1101,7 @@
       "registry_name": "icicle_projectile",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/mystics/entity/IcicleProjectileEntity.java",
-          "src/main/java/net/mcreator/mystics/client/renderer/IcicleProjectileRenderer.java"
+          "src/main/java/net/mcreator/mystics/entity/IcicleProjectileEntity.java"
         ]
       },
       "path": "~/Spells/Ice"
@@ -1299,6 +1209,397 @@
         ]
       },
       "path": "~/Armor"
+    },
+    {
+      "name": "NetherTeleportEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_teleport_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/NetherTeleportEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Spells/Fire"
+    },
+    {
+      "name": "JackFrostEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jack_frost_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/JackFrostEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spells/Ice"
+    },
+    {
+      "name": "SummonOreEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_ore_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/SummonOreEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spells/Earth"
+    },
+    {
+      "name": "LightningStrikeEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_strike_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/LightningStrikeEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spells/Storm"
+    },
+    {
+      "name": "WizardsStaffRightclicked",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wizards_staff_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/WizardsStaffRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Staffs"
+    },
+    {
+      "name": "WizardsStaffToolInHandTick",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wizards_staff_tool_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/WizardsStaffToolInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Staffs"
+    },
+    {
+      "name": "WizardsStaff",
+      "type": "tool",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wizards_staff",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mystics/models/item/wizards_staff.json",
+          "src/main/java/net/mcreator/mystics/item/WizardsStaffItem.java"
+        ]
+      },
+      "path": "~/Staffs"
+    },
+    {
+      "name": "NeophyteWandToolInHandTick",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neophyte_wand_tool_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/NeophyteWandToolInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "MageWandToolInHandTick",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mage_wand_tool_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/MageWandToolInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "PriestScepterToolInHandTick",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "priest_scepter_tool_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/PriestScepterToolInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Wands"
+    },
+    {
+      "name": "WanderingTraderArmorHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wandering_trader_armor_helmet_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/WanderingTraderArmorHelmetTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "WanderingTraderArmorChestplateTickEvent",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wandering_trader_armor_chestplate_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/WanderingTraderArmorChestplateTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "WanderingTraderArmorLeggingsTickEvent",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wandering_trader_armor_leggings_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/WanderingTraderArmorLeggingsTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "WanderingTraderArmorBootsTickEvent",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wandering_trader_armor_boots_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/WanderingTraderArmorBootsTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "WandsAndArmor",
+      "type": "tab",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wands_and_armor",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Tabs"
+    },
+    {
+      "name": "SpellsAndSpellbooks",
+      "type": "tab",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spells_and_spellbooks",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Tabs"
+    },
+    {
+      "name": "IcicleProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icicle_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mystics/procedures/IcicleProjectileWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spells/Ice"
     }
   ],
   "variable_elements": [
@@ -1362,18 +1663,16 @@
   },
   "language_map": {
     "en_us": {
+      "item_group.mystics.spells_and_spellbooks": "Mystics: Spells And Spellbooks",
       "item.mystics.wandering_trader_armor_helmet": "Wandering Trader Hood",
-      "item.mystics.hades": "Hades",
       "item.mystics.wandering_trader_armor_boots": "Wandering Trader Undergarment",
       "item.mystics.summon_ore": "Summon Ore",
       "item.mystics.nether_teleport": "Nether Teleport",
       "item.mystics.thou_shalt_love": "Healing",
       "item.mystics.diamond_spellbook": "Diamond Spellbook",
+      "item.mystics.wizards_staff": "Wizards Staff",
       "item.mystics.summon_storm": "Summon Storm",
-      "item.mystics.rock_defence": "Rock Defence",
       "item.mystics.leather_spellbook": "Leather Spellbook",
-      "item.mystics.firebolt": "Firebolt",
-      "item.mystics.hailstrom": "Hailstrom",
       "item.mystics.mage_wand": "Netherite Wand",
       "item.mystics.wandering_trader_armor_chestplate": "Wandering Trader Robes",
       "item.mystics.iron_spellbook": "Iron Spellbook",
@@ -1384,14 +1683,13 @@
       "item.mystics.dragon_fireball": "Dragon Fireball",
       "item.mystics.fire_robes_chestplate": "Fire Mage Cuirass",
       "item.mystics.fire_robes_helmet": "Fire Mage Hat",
-      "item.mystics.heatwave": "Heatwave",
       "item.mystics.priest_scepter": "Priest Scepter",
       "item.mystics.lightning_strike": "Lightning Strike",
+      "item_group.mystics.wands_and_armor": "Mystics: Wands And Armor",
       "item.mystics.jack_frost": "Jack Frost",
       "item.mystics.icicle": "Icicle",
       "item.mystics.teleport": "Teleport",
       "item.mystics.frost": "Frost",
-      "item.mystics.hoarfrost": "Hoarfrost",
       "curios.identifier.book_slot": "Book Slot",
       "item.mystics.fireball": "Fireball",
       "item.mystics.fire_robes_leggings": "Fire Mage Gambeson",
@@ -1456,6 +1754,10 @@
       },
       {
         "name": "Armor",
+        "children": []
+      },
+      {
+        "name": "Tabs",
         "children": []
       }
     ]

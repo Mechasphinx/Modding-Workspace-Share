@@ -10,7 +10,7 @@
     "name": "Dragon Fireball",
     "rarity": "EPIC",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:SpellsAndSpellbooks"
     },
     "stackSize": 1,
     "enchantability": 0,

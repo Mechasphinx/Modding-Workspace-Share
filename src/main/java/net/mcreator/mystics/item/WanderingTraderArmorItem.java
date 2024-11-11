@@ -1,27 +1,39 @@
 
 package net.mcreator.mystics.item;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.mystics.procedures.WanderingTraderArmorLeggingsTickEventProcedure;
+import net.mcreator.mystics.procedures.WanderingTraderArmorHelmetTickEventProcedure;
+import net.mcreator.mystics.procedures.WanderingTraderArmorChestplateTickEventProcedure;
+import net.mcreator.mystics.procedures.WanderingTraderArmorBootsTickEventProcedure;
 import net.mcreator.mystics.client.model.Modelhat_Converted;
 
 import java.util.function.Consumer;
 import java.util.Map;
+import java.util.List;
 import java.util.Collections;
+
+import com.google.common.collect.Iterables;
 
 public abstract class WanderingTraderArmorItem extends ArmorItem {
 	public WanderingTraderArmorItem(ArmorItem.Type type, Item.Properties properties) {
@@ -43,7 +55,7 @@ public abstract class WanderingTraderArmorItem extends ArmorItem {
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return SoundEvents.EMPTY;
+				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_leather"));
 			}
 
 			@Override
@@ -92,8 +104,22 @@ public abstract class WanderingTraderArmorItem extends ArmorItem {
 		}
 
 		@Override
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
+			list.add(Component.literal("+5% Mana When Equipped"));
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "mystics:textures/entities/hatfulltexture.png";
+		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				WanderingTraderArmorHelmetTickEventProcedure.execute(entity);
+			}
 		}
 	}
 
@@ -103,8 +129,22 @@ public abstract class WanderingTraderArmorItem extends ArmorItem {
 		}
 
 		@Override
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
+			list.add(Component.literal("+5% Mana When Equipped"));
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "mystics:textures/models/armor/mage_layer_1.png";
+		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				WanderingTraderArmorChestplateTickEventProcedure.execute(entity);
+			}
 		}
 	}
 
@@ -114,8 +154,22 @@ public abstract class WanderingTraderArmorItem extends ArmorItem {
 		}
 
 		@Override
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
+			list.add(Component.literal("+5% Mana When Equipped"));
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "mystics:textures/models/armor/mage_layer_2.png";
+		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				WanderingTraderArmorLeggingsTickEventProcedure.execute(entity);
+			}
 		}
 	}
 
@@ -125,8 +179,22 @@ public abstract class WanderingTraderArmorItem extends ArmorItem {
 		}
 
 		@Override
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
+			list.add(Component.literal("+5% Mana When Equipped"));
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "mystics:textures/models/armor/mage_layer_1.png";
+		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				WanderingTraderArmorBootsTickEventProcedure.execute(entity);
+			}
 		}
 	}
 }

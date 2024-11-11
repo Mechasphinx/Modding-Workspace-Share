@@ -10,8 +10,20 @@
     "textureLeggings": "wandering_garment",
     "enableBoots": true,
     "textureBoots": "wandering_cloak_second_piece",
+    "onHelmetTick": {
+      "name": "WanderingTraderArmorHelmetTickEvent"
+    },
+    "onBodyTick": {
+      "name": "WanderingTraderArmorChestplateTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "WanderingTraderArmorLeggingsTickEvent"
+    },
+    "onBootsTick": {
+      "name": "WanderingTraderArmorBootsTickEvent"
+    },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:WandsAndArmor"
     },
     "armorTextureFile": "mage",
     "helmetName": "Wandering Trader Hood",
@@ -19,16 +31,24 @@
     "leggingsName": "Wandering Trader Ensemble",
     "bootsName": "Wandering Trader Undergarment",
     "helmetSpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "+5% Mana When Equipped"
+      ]
     },
     "bodySpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "+5% Mana When Equipped"
+      ]
     },
     "leggingsSpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "+5% Mana When Equipped"
+      ]
     },
     "bootsSpecialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "+5% Mana When Equipped"
+      ]
     },
     "helmetModelName": "Modelhat_Converted",
     "helmetModelPart": "hat_converted",
@@ -79,7 +99,7 @@
     "toughness": 0.0,
     "knockbackResistance": 0.01,
     "equipSound": {
-      "value": ""
+      "value": "item.armor.equip_leather"
     },
     "repairItems": []
   }

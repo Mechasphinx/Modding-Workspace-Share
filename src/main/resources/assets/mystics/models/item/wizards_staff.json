@@ -1,0 +1,7 @@
+{
+  "parent": "mystics:custom/gandalf_staff",
+  "textures": {
+    "0": "mystics:block/staffstick",
+    "particle": "mystics:item/staffstick"
+  }
+}

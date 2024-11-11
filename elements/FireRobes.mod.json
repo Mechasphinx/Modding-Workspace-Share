@@ -23,7 +23,7 @@
       "name": "FireRobesHelmetTickEvent"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:WandsAndArmor"
     },
     "armorTextureFile": "fire_armor_",
     "helmetName": "Fire Mage Hat",

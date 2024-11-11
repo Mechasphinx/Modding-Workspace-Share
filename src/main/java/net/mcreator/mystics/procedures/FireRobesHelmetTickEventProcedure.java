@@ -11,6 +11,6 @@ public class FireRobesHelmetTickEventProcedure {
 			return;
 		entity.clearFire();
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 60, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 60, 0, false, false));
 	}
 }

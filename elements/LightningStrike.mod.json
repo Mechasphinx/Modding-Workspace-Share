@@ -10,7 +10,7 @@
     "name": "Lightning Strike",
     "rarity": "RARE",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:SpellsAndSpellbooks"
     },
     "stackSize": 1,
     "enchantability": 0,
@@ -35,6 +35,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onEntitySwing": {
+      "name": "LightningStrikeEntitySwingsItem"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {

@@ -13,10 +13,13 @@
     "power": 1.0,
     "damage": 5.0,
     "knockback": 5,
-    "entityModel": "Modelice",
-    "customModelTexture": "ice2.png",
+    "entityModel": "Default",
+    "customModelTexture": "",
     "onHitsEntity": {
       "name": "IcicleProjectileProjectileHitsLivingEntity"
+    },
+    "onFlyingTick": {
+      "name": "IcicleProjectileWhileProjectileFlyingTick"
     }
   }
 }

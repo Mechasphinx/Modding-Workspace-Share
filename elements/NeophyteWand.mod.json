@@ -10,10 +10,13 @@
     "blockingModelName": "Normal blocking",
     "name": "Occult Wand",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "+20% Mana When In Hand",
+        "+50% Occult Spell Power"
+      ]
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:WandsAndArmor"
     },
     "harvestLevel": 1,
     "efficiency": 4.5,
@@ -31,6 +34,9 @@
     "damageOnCrafting": false,
     "onRightClickedInAir": {
       "name": "BeginnerWandRightclicked"
+    },
+    "onItemInUseTick": {
+      "name": "NeophyteWandToolInHandTick"
     }
   }
 }

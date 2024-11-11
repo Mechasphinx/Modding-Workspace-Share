@@ -10,7 +10,7 @@
     "name": "Teleport",
     "rarity": "RARE",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:SpellsAndSpellbooks"
     },
     "stackSize": 1,
     "enchantability": 0,

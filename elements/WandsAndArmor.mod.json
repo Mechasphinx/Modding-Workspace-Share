@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "tab",
+  "definition": {
+    "name": "Mystics: Wands And Armor",
+    "icon": {
+      "value": "CUSTOM:WanderingTraderArmor.body"
+    },
+    "showSearch": false
+  }
+}

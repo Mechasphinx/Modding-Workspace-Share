@@ -12,10 +12,11 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.mystics.network.MysticsModVariables;
 
 public class Mana0ProcedureProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
-			return;
-		if ((entity.getCapability(MysticsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MysticsModVariables.PlayerVariables())).mana > 0) {
+			return false;
+		if ((entity.getCapability(MysticsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MysticsModVariables.PlayerVariables())).mana >= 0
+				/ ((entity.getCapability(MysticsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MysticsModVariables.PlayerVariables())).Max_Mana * 100)) {
 			{
 				double _setval = 0;
 				entity.getCapability(MysticsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -30,6 +31,8 @@ public class Mana0ProcedureProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.beehive.work")), SoundSource.NEUTRAL, 2, (float) 1.8, false);
 				}
 			}
+			return true;
 		}
+		return false;
 	}
 }

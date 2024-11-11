@@ -44,7 +44,8 @@ public class ManaRegenProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				if ((entity.getCapability(MysticsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MysticsModVariables.PlayerVariables())).mana == 100) {
+				if ((entity.getCapability(MysticsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new MysticsModVariables.PlayerVariables())).mana == (entity.getCapability(MysticsModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new MysticsModVariables.PlayerVariables())).Max_Mana) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_cluster.step")), SoundSource.NEUTRAL, (float) 0.3, (float) 0.5);

@@ -10,7 +10,7 @@
     "name": "Icicle",
     "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:SpellsAndSpellbooks"
     },
     "stackSize": 1,
     "enchantability": 0,

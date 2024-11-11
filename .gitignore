@@ -1,0 +1,10 @@
+.gradle/*
+.mcreator/*
+build/*
+run/*
+
+*.log
+vcsInfo
+*.class*
+*.bin
+*.lock
