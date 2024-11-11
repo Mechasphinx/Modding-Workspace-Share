@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.AIR"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "block.powder_snow.break"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Modelice",
+    "customModelTexture": "ice2.png",
+    "onHitsEntity": {
+      "name": "IcicleProjectileProjectileHitsLivingEntity"
+    }
+  }
+}

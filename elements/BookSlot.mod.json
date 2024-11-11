@@ -1,0 +1,9 @@
+{
+  "_fv": 60,
+  "_type": "curiosslot",
+  "definition": {
+    "texture": "download_11.png",
+    "name": "Book Slot",
+    "amount": 1
+  }
+}

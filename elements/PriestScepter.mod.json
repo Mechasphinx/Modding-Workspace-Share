@@ -1,0 +1,36 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "scepter",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Priest Scepter",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.1099999999999999,
+    "enchantability": 333,
+    "damageVsEntity": 4.0,
+    "usageCount": 333,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "BeginnerWandRightclicked"
+    }
+  }
+}

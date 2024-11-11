@@ -1,0 +1,158 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_bar_purple.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 0,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_pointpurple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Mana5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 1,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Mana4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 1,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_pointpurple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Manaoverlayprocedure4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 17,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Manoverlayprocedure3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 17,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_pointpurple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Mana3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 32,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Manaoverlayprocedure2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 32,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_pointpurple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Mana2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 48,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Manaoverlaydisplaycondition"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 48,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana_pointpurple.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Mana90"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 64,
+          "y": 224
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mana2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Mana100"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 64,
+          "y": 224
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

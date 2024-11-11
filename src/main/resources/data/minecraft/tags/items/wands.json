@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "mystics:beginner_wand",
+    "mystics:neophyte_wand",
+    "mystics:mage_wand"
+  ]
+}

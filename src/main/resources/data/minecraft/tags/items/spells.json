@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "mystics:fireball",
+    "mystics:heatwave",
+    "mystics:hades",
+    "mystics:firebolt",
+    "mystics:nether_teleport",
+    "mystics:frost",
+    "mystics:icicle",
+    "mystics:hailstrom",
+    "mystics:hoarfrost",
+    "mystics:jack_frost",
+    "mystics:quicksand",
+    "mystics:fangstrike",
+    "mystics:teleport",
+    "mystics:summon_storm",
+    "mystics:thou_shalt_love"
+  ]
+}

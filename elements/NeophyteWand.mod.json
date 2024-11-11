@@ -1,0 +1,36 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "blazerod",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Occult Wand",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.5,
+    "attackSpeed": 1.2000000000000002,
+    "enchantability": 3,
+    "damageVsEntity": 4.5,
+    "usageCount": 200,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "BeginnerWandRightclicked"
+    }
+  }
+}

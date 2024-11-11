@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "mystics:leather_spellbook",
+    "mystics:iron_spellbook",
+    "mystics:gold_spellbook",
+    "mystics:diamond_spellbook",
+    "mystics:netherite_spellbook"
+  ]
+}

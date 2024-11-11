@@ -1,0 +1,36 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "facebackround",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Netherite Wand",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "harvestLevel": 1,
+    "efficiency": 5.5,
+    "attackSpeed": 1.4000000000000001,
+    "enchantability": 4,
+    "damageVsEntity": 5.5,
+    "usageCount": 400,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "BeginnerWandRightclicked"
+    }
+  }
+}
